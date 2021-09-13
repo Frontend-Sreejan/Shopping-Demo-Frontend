@@ -1,0 +1,24 @@
+.site__header {
+    .uk-text-right .uk-button {
+        padding-right: 0;
+        .uk-icon svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .uk-light .uk-navbar-nav > li > a {
+        @include css-var(color, $theme, clr-white) ;
+    }
+    
+    .uk-navbar-dropdown-nav {
+        .uk-active, .uk-active a {
+            @include css-var(color, $theme, primary, true);
+        }
+    }
+}
+
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+    min-height: 1px;
+    padding: 0.8rem 1rem;
+}

@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site Demo</title>
+    <!-- UIKit CSS -->
+    <link rel="stylesheet" href="./assets/plugin/uikit/css/uikit.min.css">
+    <!-- Google Fonts CSS -->
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="site site--home">
+        <!-- Header -->
+        <header class="site__header uk-padding-small uk-padding-remove-horizontal pb-0 bg-accent-cloud">
+            <section class="site__header-top">
+                <div class="uk-container-expand uk-padding uk-padding-remove-vertical">
+                    <div class="uk-child-width-1-2 uk-flex-middle" uk-grid>
+                        <div>
+                            <a href="#">
+                                <img class="logo" src="./assets/image/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="uk-text-right">
+                            <div class="uk-flex-middle uk-flex-right uk-flex">
+                                <button
+                                    class="uk-button uk-button-transparent uk-padding-remove-vertical uk-border-pill uk-flex uk-flex-middle">
+                                    <span class="mr-2" uk-icon="cart"></span>
+                                    <span class="uk-display-inline-block">
+                                        <span class="cart-text">Cart</span>
+                                        <span class="uk-badge">1</span>
+                                    </span>
+                                </button>
+                                <a href="#!"
+                                    class="uk-button uk-button-transparent uk-padding-remove-vertical uk-border-pill uk-flex uk-flex-middle">
+                                    <span class="mr-2" uk-icon="user"></span>
+                                    <span class="uk-display-inline-block uk-text-left">
+                                        <span class="cart-text uk-display-block">Login or Register</span>
+                                        <span class="cart-text">My Account</span>
+                                    </span>
+                                </a>
+                                <button class="uk-toggle-button uk-hidden@m" type="button" uk-toggle="target: #offcanvas-nav">
+                                    <a class="uk-navbar-toggle" href="#">
+                                        <span uk-navbar-toggle-icon></span>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <nav class="uk-navbar-container uk-margin uk-visible@m bg-primary uk-light" uk-navbar="mode: hover;">
+                <div class="uk-container-expand uk-padding uk-padding-remove-vertical w-full">
+                    <div class="uk-navbar-center uk-flex-center">
+
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="#">Single Dropdown <span uk-icon="chevron-down"></span></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-nav-header">Innerpages Link</li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="uk-active"><a href="default.html">Default Page</a></li>
+                                        <li class=""><a href="about.html">About Page</a></li>
+                                        <li class=""><a href="product.html">Product</a></li>
+                                        <li class=""><a href="single-product.html">Single Product</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Mega Menu  <span uk-icon="chevron-down"></span></a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header">Header</li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header">Header</li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header">Header</li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Electornics</a></li>
+                            <li><a href="#">Kitcen</a></li>
+                            <li><a href="#">Furniture</a></li>
+                            <li><a href="#">Cameras</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div id="offcanvas-nav" uk-offcanvas="overlay: true; mode: reveal;">
+                <div class="uk-offcanvas-bar">
+
+                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                        <li class="uk-active"><a href="#">Home</a></li>
+                            <li class="uk-parent">
+                                <a href="#">Mobile</a>
+                                <ul class="uk-nav uk-nav-sub">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Electornics</a></li>
+                            <li><a href="#">Kitcen</a></li>
+                            <li><a href="#">Furniture</a></li>
+                            <li><a href="#">Cameras</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Category Navlist -->
+        <section class="site__section-def site__category-nav-list uk-padding uk-padding-remove-horizontal">
+            <div class="uk-container">
+                <div class="uk-text-center uk-margin-large-bottom">
+                    <h1>I'm looking for... </h1>
+                </div>
+                <div class="uk-child-width-1-3 uk-child-width-1-6@l" uk-grid>
+                    <div class="site__category-nav-list__link uk-position-relative">
+                        <a href="#">
+                            <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                class="image-cover uk-border-circle" alt="mobile">
+                        </a>
+                    </div>
+                    <div class="site__category-nav-list__link uk-position-relative">
+                        <a href="#">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
+                                class="image-cover uk-border-circle" alt="laptop">
+                        </a>
+                    </div>
+                    <div class="site__category-nav-list__link uk-position-relative">
+                        <a href="#">
+                            <img src="https://cdn.pixabay.com/photo/2015/01/20/12/51/mobile-605422_960_720.jpg"
+                                class="image-cover uk-border-circle" alt="ipod">
+                        </a>
+                    </div>
+                    <div class="site__category-nav-list__link uk-position-relative">
+                        <a href="#">
+                            <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg"
+                                class="image-cover uk-border-circle" alt="mobile">
+                        </a>
+                    </div>
+                    <div class="site__category-nav-list__link uk-position-relative">
+                        <a href="#">
+                            <img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg"
+                                class="image-cover uk-border-circle" alt="mobile">
+                        </a>
+                    </div>
+                    <div class="site__category-nav-list__link uk-position-relative">
+                        <a href="#">
+                            <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                class="image-cover uk-border-circle" alt="mobile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Category Navlist end -->
+
+        <!-- Main -->
+        <main class="site__main">
+            <!-- Feature -->
+            <section class="site__feature-list uk-padding-large pb-0 uk-margin-large-top uk-padding-remove-horizontal">
+                <div uk-slideshow="animation: push">
+
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://cdn.pixabay.com/photo/2015/01/20/12/51/mobile-605422_960_720.jpg" alt="" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg" alt="" uk-cover>
+                            </li>
+                        </ul>
+                
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                
+                    </div>
+                
+                </div>
+            </section>
+            <!-- Feature end -->
+
+            <!-- Best Sellers -->
+            <section class="site__best-seller uk-padding uk-padding-remove-horizontal">
+                <div class="uk-container-expand uk-padding uk-padding-remove-vertical">
+                    <h2 class="uk-h2 uk-text-center ">Best Seller</h2>
+                    <hr class="uk-divider-icon uk-margin-medium-bottom">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider>
+
+                        <ul
+                            class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-5@l uk-grid-small uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div uk-slideshow="animation: push">
+
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                            <ul class="uk-slideshow-items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+                                            <li class="uk-active blue" uk-slideshow-item="0"><a href="#"></a></li>
+                                            <li class="black" uk-slideshow-item="1"><a href="#"></a></li>
+                                            <li class="orange" uk-slideshow-item="2"><a href="#"></a></li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div uk-slideshow="animation: push">
+
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                            <ul class="uk-slideshow-items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+                                            <li class="uk-active blue" uk-slideshow-item="0"><a href="#"></a></li>
+                                            <li class="black" uk-slideshow-item="1"><a href="#"></a></li>
+                                            <li class="orange" uk-slideshow-item="2"><a href="#"></a></li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div uk-slideshow="animation: push">
+
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                            <ul class="uk-slideshow-items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+                                            <li class="uk-active blue" uk-slideshow-item="0"><a href="#"></a></li>
+                                            <li class="black" uk-slideshow-item="1"><a href="#"></a></li>
+                                            <li class="orange" uk-slideshow-item="2"><a href="#"></a></li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div uk-slideshow="animation: push">
+
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                            <ul class="uk-slideshow-items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+                                            <li class="uk-active blue" uk-slideshow-item="0"><a href="#"></a></li>
+                                            <li class="black" uk-slideshow-item="1"><a href="#"></a></li>
+                                            <li class="orange" uk-slideshow-item="2"><a href="#"></a></li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div uk-slideshow="animation: push">
+
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                            <ul class="uk-slideshow-items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+                                            <li class="uk-active blue" uk-slideshow-item="0"><a href="#"></a></li>
+                                            <li class="black" uk-slideshow-item="1"><a href="#"></a></li>
+                                            <li class="orange" uk-slideshow-item="2"><a href="#"></a></li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div uk-slideshow="animation: push">
+
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                            <ul class="uk-slideshow-items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+                                            <li class="uk-active blue" uk-slideshow-item="0"><a href="#"></a></li>
+                                            <li class="black" uk-slideshow-item="1"><a href="#"></a></li>
+                                            <li class="orange" uk-slideshow-item="2"><a href="#"></a></li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div uk-slideshow="animation: push">
+
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                            <ul class="uk-slideshow-items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_960_720.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+                                            <li class="uk-active blue" uk-slideshow-item="0"><a href="#"></a></li>
+                                            <li class="black" uk-slideshow-item="1"><a href="#"></a></li>
+                                            <li class="orange" uk-slideshow-item="2"><a href="#"></a></li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-text-white uk-position-small uk-hidden-hover" href="#"
+                            uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-text-white uk-position-small uk-hidden-hover" href="#"
+                            uk-slidenav-next uk-slider-item="next"></a>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Best Sellers end -->
+
+            <!-- banner -->
+            <section class="site__info-banner ">
+                <div class="uk-container-expand">
+                    <div class="uk-background uk-background-center-center uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-middle uk-flex-left uk-padding uk-light" uk-parallax="bgy: -200"
+                        style="background-image: url(https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg);">
+                        <div class="uk-width-1-2">
+                            <dl class="uk-description-list">
+                                <dt>
+                                    <div class="uk-h2 uk-text-primary uk-text-bold">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                                </dt>
+                                <dd>
+                                    <p class="uk-text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolore?</p>
+                                    <a href="#" class="uk-button uk-button-primary">Shop Now</a>
+                                </dd>
+                            </dl>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner end -->
+
+            <!-- Best Sellers -->
+            <section class="site__best-seller uk-padding uk-padding-remove-horizontal">
+                <div class="uk-container-expand uk-padding uk-padding-remove-vertical">
+                    <h2 class="uk-h2 uk-text-center ">Popular Propduct</h2>
+                    <hr class="uk-divider-icon uk-margin-medium-bottom">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider>
+
+                        <ul
+                            class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-5@l uk-grid-small uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <a href="#"><img
+                                            src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                            alt=""></a>
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <a href="#"><img
+                                            src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                            alt=""></a>
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <a href="#"><img
+                                            src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                            alt=""></a>
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <a href="#"><img
+                                            src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                            alt=""></a>
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <a href="#"><img
+                                            src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                            alt=""></a>
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <a href="#"><img
+                                            src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                            alt=""></a>
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <a href="#"><img
+                                            src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg"
+                                            alt=""></a>
+                                    <div class=" uk-card-body">
+                                        <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                                            <div class="uk-width-expand">
+                                                <a
+                                                    class="uk-text-secondary uk-text-light uk-h5 uk-display-block uk-margin-remove-vertical mb-card-title">Lorem
+                                                    ipsum dolor sit amet.</a>
+                                                <span
+                                                    class="uk-h5 uk-text-secondary uk-text-light line-through uk-margin-small-right">$500</span>
+                                                <span class="uk-h5 uk-text-primary uk-text-lead ">$500</span>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <a href="#"
+                                                    class="uk-button uk-button-icon uk-button-primary uk-margin-small-bottom"><span
+                                                        uk-icon="cart"></span></a>
+                                                <a href="#" class="uk-button uk-button-icon uk-button-secondary"><span
+                                                        uk-icon="heart"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-text-white uk-position-small uk-hidden-hover" href="#"
+                            uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-text-white uk-position-small uk-hidden-hover" href="#"
+                            uk-slidenav-next uk-slider-item="next"></a>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Best Sellers end -->
+
+            <!-- Best Sellers -->
+            <section class="site__best-seller uk-padding uk-padding-remove-horizontal bg-accent-cloud">
+                <div class="uk-container-expand uk-padding uk-padding-remove-vertical">
+                    <div class="uk-grid-small uk-light" uk-grid>
+                        
+                        <div class="uk-width-1-1 uk-width-1-2@m">
+                            <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" uk-parallax="bgy: -200" style="background-image: url(https://cdn.pixabay.com/photo/2016/03/27/19/31/fashion-1283863_960_720.jpg);">
+                                <p class="uk-text-lead uk-text-bold uk-text-primary bg-primary-light uk-button">Sweater</p>
+                           </div>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-1-2@m">
+                            <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" uk-parallax="bgy: -200" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg);">
+                                <p class="uk-text-lead uk-text-bold uk-text-primary bg-primary-light uk-button">Lady's Bags</p>
+                           </div>
+                        </div>
+                        
+                        <div class="uk-width-1-1 uk-width-1-4@m">
+                            <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" uk-parallax="bgy: -200" style="background-image: url(https://cdn.pixabay.com/photo/2016/03/27/19/31/fashion-1283863_960_720.jpg);">
+                                <p class="uk-text-lead uk-text-bold uk-text-primary bg-primary-light uk-button">Sweater</p>
+                           </div>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-3-4@m">
+                            <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" uk-parallax="bgy: -200" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg);">
+                                <p class="uk-text-lead uk-text-bold uk-text-primary bg-primary-light uk-button">Lorem ipsum dolor sit.</p>
+                           </div>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-1-3@m">
+                            <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" uk-parallax="bgy: -200" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg);">
+                                <p class="uk-text-lead uk-text-bold uk-text-primary bg-primary-light uk-button">Lorem, ipsum dolor.</p>
+                           </div>
+                        </div>
+                        
+                        <div class="uk-width-1-1 uk-width-1-4@m">
+                            <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" uk-parallax="bgy: -200" style="background-image: url(https://cdn.pixabay.com/photo/2016/03/27/19/31/fashion-1283863_960_720.jpg);">
+                                <p class="uk-text-lead uk-text-bold uk-text-primary bg-primary-light uk-button">Lorem, ipsum.</p>
+                           </div>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-expand@m">
+                            <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" uk-parallax="bgy: -200" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg);">
+                                <p class="uk-text-lead uk-text-bold uk-text-primary bg-primary-light uk-button">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, esse?</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Best Sellers end -->
+
+            <!-- banner -->
+            <section class="site__info-banner ">
+                <div class="uk-container-expand">
+                    <div class="uk-background uk-background-center-center uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-middle uk-flex-left uk-padding uk-light" uk-parallax="bgy: -200"
+                        style="background-image: url(https://cdn.pixabay.com/photo/2015/01/20/12/51/mobile-605422_960_720.jpg);">
+                        <div class="uk-width-1-2">
+                            <dl class="uk-description-list">
+                                <dt>
+                                    <div class="uk-h2 uk-text-primary uk-text-bold">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                                </dt>
+                                <dd>
+                                    <p class="uk-text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolore?</p>
+                                    <a href="#" class="uk-button uk-button-primary">Shop Now</a>
+                                </dd>
+                            </dl>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner end -->
+
+            <!-- Video Slider -->
+            <section class="site__video-slide uk-padding uk-padding-remove-horizontal bg-accent-cloud">
+                <div class="uk-container-expand uk-padding uk-padding-remove-vertical">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                        uk-slideshow="animation: push">
+
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <iframe  src="https://www.youtube.com/embed/TDNGEFd-aEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li>
+                                <iframe  src="https://www.youtube.com/embed/377AQ0y6LPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li>
+                                <iframe  src="https://www.youtube.com/embed/8wA6uPEu9hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                            uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                            uk-slideshow-item="next"></a>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Video Slider end -->
+
+            <!-- zig-jag blog post -->
+            <section class="site__blog-list site__blog-list--zig-jag">
+                <div class="uk-container-expand">
+                    <div class="uk-card">
+                        <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+                            <div>
+                                <article class="uk-padding uk-flex uk-flex-column uk-flex-center uk-flex-middle"
+                                    style="height:100%;">
+                                    <h2><a href="#">Laptop Accessories</a></h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt vero
+                                        mollitia sapiente eaque deleniti voluptates aliquid quaerat? At, corrupti!</p>
+                                    <a href="#" class="uk-button uk-button-default">Shop Now</a>
+                                </article>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
+                                        alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="uk-card">
+                        <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+                            <div>
+                                <article class="uk-padding uk-flex uk-flex-column uk-flex-center uk-flex-middle"
+                                    style="height:100%;">
+                                    <h2><a href="#">Laptop Accessories</a></h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt vero
+                                        mollitia sapiente eaque deleniti voluptates aliquid quaerat? At, corrupti!</p>
+                                    <a href="#" class="uk-button uk-button-default">Shop Now</a>
+                                </article>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
+                                        alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="uk-card">
+                        <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+                            <div>
+                                <article class="uk-padding uk-flex uk-flex-column uk-flex-center uk-flex-middle"
+                                    style="height:100%;">
+                                    <h2><a href="#">Laptop Accessories</a></h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt vero
+                                        mollitia sapiente eaque deleniti voluptates aliquid quaerat? At, corrupti!</p>
+                                    <a href="#" class="uk-button uk-button-default">Shop Now</a>
+                                </article>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
+                                        alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="uk-card">
+                        <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+                            <div>
+                                <article class="uk-padding uk-flex uk-flex-column uk-flex-center uk-flex-middle"
+                                    style="height:100%;">
+                                    <h2><a href="#">Laptop Accessories</a></h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt vero
+                                        mollitia sapiente eaque deleniti voluptates aliquid quaerat? At, corrupti!</p>
+                                    <a href="#" class="uk-button uk-button-default">Shop Now</a>
+                                </article>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
+                                        alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- zig-jag blog post end -->
+
+            <!-- New Arriable -->
+            <section class="site__new-arriable uk-padding uk-padding-remove-horizontal bg-accent-cloud">
+                <div class="uk-container-expand uk-padding uk-padding-remove-vertical">
+                    
+                    <h2 class="uk-h2 uk-text-center uk-text-bold">Check Out Our New Arriable</h2>
+                    <hr class="uk-divider-icon uk-margin-medium-bottom">
+
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+                        <ul class="uk-slider-items uk-grid uk-grid-small">
+                            <li class="uk-width-3-4">
+                                <div class="uk-panel">
+                                    <img src="https://cdn.pixabay.com/photo/2015/01/20/12/51/mobile-605422_960_720.jpg" alt="">
+                                    <div class="uk-position-center uk-text-center uk-panel">
+                                        <h1>New Earbud</h1>
+                                        <a href="#" class="uk-button uk-button-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-4">
+                                <div class="uk-panel">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                                    <div class="uk-position-center uk-text-center uk-panel">
+                                        <h1>New Laptop</h1>
+                                        <a href="#" class="uk-button uk-button-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-4">
+                                <div class="uk-panel">
+                                    <img src="https://cdn.pixabay.com/photo/2015/01/20/12/51/mobile-605422_960_720.jpg" alt="">
+                                    <div class="uk-position-center uk-text-center uk-panel">
+                                        <h1>New Earbud</h1>
+                                        <a href="#" class="uk-button uk-button-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-4">
+                                <div class="uk-panel">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                                    <div class="uk-position-center uk-text-center uk-panel">
+                                        <h1>New Laptop</h1>
+                                        <a href="#" class="uk-button uk-button-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-4">
+                                <div class="uk-panel">
+                                    <img src="https://cdn.pixabay.com/photo/2015/01/20/12/51/mobile-605422_960_720.jpg" alt="">
+                                    <div class="uk-position-center uk-text-center uk-panel">
+                                        <h1>New Earbud</h1>
+                                        <a href="#" class="uk-button uk-button-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-4">
+                                <div class="uk-panel">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                                    <div class="uk-position-center uk-text-center uk-panel">
+                                        <h1>New Laptop</h1>
+                                        <a href="#" class="uk-button uk-button-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
+                </div>
+            </section>
+            <!-- New Arriable end -->
+            
+
+            <!-- Client  -->
+            <section class="site__client uk-padding-large uk-padding-remove-horizontal">
+                <div class="uk-contaier-expand uk-padding uk-padding-remove-vertical">
+                    <!-- <h2 class="uk-h2 uk-text-center ">Our Client</h2>
+                    <hr class="uk-divider-icon uk-margin-medium-bottom"> -->
+
+                    <div class="uk-child-width-1-3 uk-child-width-1-5@m uk-flex-middle" uk-grid>
+                        <figure>
+                            <img src="./assets/image/client-1.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/image/client-2.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/image/client-3.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/image/client-4.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/image/client-1.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- Client end -->
+            
+            <!-- Instagram -->
+            <section class="site__gallery uk-padding uk-padding-remove-horizontal bg-accent-cloud">
+                <div class="uk-container-expand uk-padding uk-padding-remove-vertical">
+                    <h2 class="uk-h2 uk-text-center ">#Shopping form <span class="uk-text-bold" style="color: #405de6;">Instagram</span></h2>
+                    <h4 class="uk-h5 uk-text-center uk-text-light">Shop from Instagram</h4>
+                    <hr class="uk-divider-icon uk-margin-medium-bottom">
+
+                    <div class="uk-grid-small uk-child-with-1-3 uk-child-width-1-5@m" uk-grid>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2015/01/20/12/51/mobile-605422_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2015/01/20/12/51/mobile-605422_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Instagram end -->
+        </main>
+        <!-- Main end -->
+
+        <!-- Footer -->
+        <section
+            class="site__footer-social uk-padding-small uk-padding-remove-horizontal uk-background-primary">
+            <div class="uk-container">
+                <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                    <div>
+                        <h3 class="uk-light uk-h3">Get connected with us on social networks!</h3>
+                    </div>
+                    <div>
+                        <ul
+                            class="uk-iconnav uk-flex uk-flex-wrap uk-flex-row uk-flex-center uk-flex-right uk-text-right uk-light">
+                            <li><a href="#"><span uk-icon="facebook"></span></a></li>
+                            <li><a href="#"><span uk-icon="twitter"></span></a></li>
+                            <li><a href="#"><span uk-icon="instagram"></span></a></li>
+                            <li><a href="#"><span uk-icon="google"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="site__footer uk-padding uk-padding-remove-horizontal bg-primary uk-light">
+            <section class="site__footer__top">
+                <div class="uk-container">
+                    <div class="uk-grid-divider" uk-grid>
+                        <div>
+                            <h4>Sign up for newsletter</h4>
+                            <form action="">
+                                <div class="uk-grid-collapse" uk-grid>
+                                    <div class="uk-inline uk-width-expand@m">
+                                        <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                        <input class="uk-input h-full" type="text" placeholder="Email Address">
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="uk-button uk-button-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-divider"
+                                uk-grid>
+                                <div>
+                                    <h4>Customer Services</h4>
+                                    <ul class="uk-list">
+                                        <li><a href="#">Account</a></li>
+                                        <li><a href="#">Track Your Order</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Shop</h4>
+                                    <ul class="uk-list">
+                                        <li><a href="#">Account</a></li>
+                                        <li><a href="#">Track Your Order</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Information</h4>
+                                    <ul class="uk-list">
+                                        <li><a href="#">Account</a></li>
+                                        <li><a href="#">Track Your Order</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="uk-divider-icon">
+            <section class="site__footer__bottom uk-margin-small-top">
+                <div class="uk-container">
+                    <div class="uk-grid-medium uk-flex-middle uk-grid-divider" uk-grid>
+                        <div>
+                            <a href="#">
+                                <img class="logo" src="./assets/image/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="uk-width-expand uk-text-center">
+                            <p>&copy; Copyright 2021 | All right reserved.</p>
+                        </div>
+                        <div class="">
+                            <uk class="uk-flex uk-iconnav">
+                                <li><a href="#" class="uk-text-primary">Privacy Policy</a></li>
+                                <li><a href="#" class="uk-text-primary">Terms & Conditions</a></li>
+                            </uk>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer end -->
+    </div>
+
+    <!-- UIKit JS -->
+    <script src="./assets/plugin/uikit/js/uikit.js"></script>
+    <script src="./assets/plugin/uikit/js/uikit-icons.js"></script>
+</body>
+
+</html>
