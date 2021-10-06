@@ -58,17 +58,17 @@
                     <div class="uk-navbar-center uk-flex-center">
 
                         <ul class="uk-navbar-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="uk-active">
+                            <li class="uk-active"><a href="#">Home</a></li>
+                            <li>
                                 <a href="#">Single Dropdown <span uk-icon="chevron-down"></span></a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li class="uk-nav-header">Innerpages Link</li>
                                         <li class="uk-nav-divider"></li>
-                                        <li class=""><a href="default.html">Default Page</a></li>
-                                        <li class="uk-active"><a href="about.html">About Us</a></li>
-                                        <li class=""><a href="product.html">Product</a></li>
-                                        <li class=""><a href="single-product.html">Single Product</a></li>
+                                        <li class="uk-active"><a href="default.html">Default Page</a></li>
+                                        <li class=""><a href="about.html">About Page</a></li>
+                                        <li class=""><a href="pr0duct.html">Product</a></li>
+                                        <li class=""><a href="single-pr0duct.html">Single Product</a></li>
                                         <li class=""><a href="add-to-cart.html">Add To Cart</a></li>
                                         <li class=""><a href="shipping.html">Shipping</a></li>
                                     </ul>
@@ -152,98 +152,94 @@
         <!-- Main -->
         <main class="site__main">
             <!-- Default page -->
-            <section class="site__default uk-padding uk-padding-remove-horizontal ">
+            <section class="site__default site__add-to-cart uk-padding uk-padding-remove-horizontal ">
                 <div class="uk-container-expand uk-padding uk-padding-remove-vertical">
-                    <div class="uk-text-center">
-                        <h1 class="uk-h1">About Us</h1>
+                    <div class="site__add-to-cart__header">
+                        <h1>My Cart</h1>
+                    </div>
+                    <div uk-grid>
+                        <div class="uk-width-1-1 uk-width-2-3@l">
+                            <div class="uk-overflow-auto">
+                                <table class="uk-table uk-table-small uk-table-justify site__add-to-cart__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Products</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Total</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="">
+                                                        <a href="#"><img src="https://cdn.pixabay.com/photo/2014/08/05/10/27/iphone-410311_960_720.jpg" class="h-full" alt="product name"></a>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="product-title"><a href="#">Product Ttitle</a></div>
+                                                        <div>Rs. 300.00</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Rs. 250.00
+                                            </td>
+                                            <td>
+                                                <input type="number" class="uk-input " value="1">
+                                            </td>
+                                            <td>
+                                                <strong>Rs. 250.00</strong>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="close-btn">
+                                                    <span uk-icon="close"></span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>      
+                            <article class="uk-margin-large-top">
+                                <h4>Additional Comments</h4>
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Special instruction for seller..."></textarea>
+                                </div>
+                            </article>                      
+                        </div>
+                        
+                        <div class="uk-width-1-1 uk-width-1-3@l">
+                            <aside>
+                                <h4>Order Summary</h4>
+                                <hr class="uk-divider-icon">
+                                <div class="uk-gird" uk-grid>
+                                    <h5>Sub Total:</h5>
+                                    <h4 class="uk-width-expand@l uk-text-right">Rs. 250.00</h4>
+                                </div>
+                                <hr class="uk-divider-icon">
+                                <div class="cupon-box">
+                                    <h5>Cupone Code:</h5>
+                                    <div class="uk-margin">
+                                        <input type="text" class="uk-input">
+                                    </div>
+                                    <span>Coupon code will be applied on the checkout page</span>
+                                </div>
+                                <hr class="uk-divider-icon">
+                                <div class="uk-gird" uk-grid>
+                                    <h5>Total:</h5>
+                                    <h4 class="uk-width-expand@l uk-text-right">Rs. 250.00</h4>
+                                </div>
+                                <hr class="uk-divider-icon">
+                                <div class="button-group">
+                                    <a href="#" class="uk-button uk-button-large uk-button-primary">Proceed to Checkout</a>
+                                    <a href="#" class="uk-button uk-button-large uk-button-secondary">Continue Shopping</a>
+                                </div>
+                            </aside>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            
-            <!-- zig-jag blog post -->
-            <section class="site__blog-list site__blog-list--zig-jag bg-accent-cloud">
-                <div class="uk-container-expand">
-                    <div class="uk-card">
-                        <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
-                            <div>
-                                <article class="uk-padding uk-flex uk-flex-column uk-flex-center uk-flex-middle"
-                                    style="height:100%;">
-                                    <h2 class="uk-text-primary">Mission</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt vero
-                                        mollitia sapiente eaque deleniti voluptates aliquid quaerat? At, corrupti!</p>
-                                    <!-- <a href="#" class="uk-button uk-button-default">Shop Now</a> -->
-                                </article>
-                            </div>
-                            <figure>
-                                <a href="#">
-                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
-                                        alt="">
-                                </a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="uk-card">
-                        <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
-                            <div>
-                                <article class="uk-padding uk-flex uk-flex-column uk-flex-center uk-flex-middle"
-                                    style="height:100%;">
-                                    <h2 class="uk-text-primary">Our Product</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt vero
-                                        mollitia sapiente eaque deleniti voluptates aliquid quaerat? At, corrupti!</p>
-                                    <!-- <a href="#" class="uk-button uk-button-default">Shop Now</a> -->
-                                </article>
-                            </div>
-                            <figure>
-                                <a href="#">
-                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
-                                        alt="">
-                                </a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="uk-card">
-                        <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
-                            <div>
-                                <article class="uk-padding uk-flex uk-flex-column uk-flex-center uk-flex-middle"
-                                    style="height:100%;">
-                                    <h2 class="uk-text-primary">Our Approach</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt vero
-                                        mollitia sapiente eaque deleniti voluptates aliquid quaerat? At, corrupti!</p>
-                                    <!-- <a href="#" class="uk-button uk-button-default">Shop Now</a> -->
-                                </article>
-                            </div>
-                            <figure>
-                                <a href="#">
-                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
-                                        alt="">
-                                </a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="uk-card">
-                        <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
-                            <div>
-                                <article class="uk-padding uk-flex uk-flex-column uk-flex-center uk-flex-middle"
-                                    style="height:100%;">
-                                    <h2 class="uk-text-primary">Objective</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt vero
-                                        mollitia sapiente eaque deleniti voluptates aliquid quaerat? At, corrupti!</p>
-                                    <!-- <a href="#" class="uk-button uk-button-default">Shop Now</a> -->
-                                </article>
-                            </div>
-                            <figure>
-                                <a href="#">
-                                    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg"
-                                        alt="">
-                                </a>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="site__section-gap uk-padding uk-padding-remove-horizontal"></section>
-            <!-- zig-jag blog post end -->
             <!-- Default page end -->
         </main>
         <!-- Main end -->
